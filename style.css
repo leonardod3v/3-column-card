@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #fff;
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+main {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 375px;
+    height: 100%;
+}
+
+section {
+    width: 55%;
+    height: 17rem;
+    padding: 1.75rem;
+}
+
+section .logo img {
+    width: 2.25rem;
+}
+
+section:nth-child(1) {
+    background-color: #e38826;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+section:nth-child(2) {
+    background-color: #006970;
+}
+
+section:nth-child(3) {
+    background-color: #004241;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+section p.title {
+    margin-top: 1rem;
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+}
+
+section p.text {
+    margin: 1rem 0;
+    font-size: 0.6rem;
+    line-height: 160%;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+section p, section button {
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+section button {
+    border-radius: 3rem;
+    border: none;
+    padding: 0.5rem;
+    font-size: 0.575rem;
+    width: 5.5rem;
+    height: 2rem;
+}
+
+section button#btn-1:hover,
+section button#btn-2:hover,
+section button#btn-3:hover {
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid #fff;
+    color: #fff;
+    cursor: pointer;
+}
+section button#btn-1 {
+    color: #e38826;
+}
+
+section button#btn-2 {
+    color: #006970;
+}
+
+section button#btn-3 {
+    color: #004241;
+}
+
+@media only screen and (min-width: 1440px) {
+
+    main {
+        width: 62.5rem;
+        flex-direction: row;
+    }
+
+    section {
+        width: 30%;
+        height: 30rem;
+        padding: 2.75rem;
+    }
+
+    section .logo img {
+        scale: 160%;
+        margin-bottom: 1.25rem;
+    }
+
+    section p.title {
+        font-size: 2.25rem;
+        margin-bottom: 1.75rem;
+    }
+
+    section p.text {
+        font-size: 0.93rem;
+    }
+
+    section button {
+        width: 9rem;
+        height: 3rem;
+        font-size: 0.93rem;
+        margin-top: 3.5rem;
+    }
+
+
+    section:nth-child(1) {
+        background-color: #e38826;
+        border-top-left-radius: 6px;
+        border-bottom-left-radius: 6px;
+        border-top-right-radius: 0;
+    }
+    
+    
+    section:nth-child(3) {
+        background-color: #004241;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 6px;
+        border-bottom-right-radius: 6px;
+    }
+}
